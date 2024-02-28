@@ -3,32 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landing Page</title>
+<title>Landing Page with Video</title>
 <style>
   body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
   }
   .video-container {
     width: 100%;
-    max-width: 640px;
-    margin: auto;
+    height: auto;
+    text-align: center;
   }
   video {
     width: 100%;
-    border: none;
+    height: auto;
   }
-  .nav-button {
-    display: block;
-    width: 200px;
-    padding: 10px;
-    margin: 20px auto;
+  .button-container {
     text-align: center;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    margin-top: 20px;
   }
-  .nav-button:hover {
+  .gallery-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .gallery-button:hover {
     background-color: #0056b3;
   }
 </style>
@@ -36,13 +42,14 @@
 <body>
 
 <div class="video-container">
-  <video autoplay loop muted playsinline>
-    <source src="Seattle_art_video.mp4" type="video/mp4">
+  <video src="https://pika.art/video/071c800f-8263-44e2-bc78-4224c5c9a74a" autoplay loop muted playsinline>
     Your browser does not support the video tag.
   </video>
 </div>
 
-<a href="content.html" class="nav-button">View Gallery</a>
+<div class="button-container">
+  <a href="content.html" class="gallery-button">View Gallery</a>
+</div>
 
 </body>
 </html>
