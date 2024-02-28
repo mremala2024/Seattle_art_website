@@ -5,40 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Landing Page</title>
 <style>
-  body { font-family: Arial, sans-serif; }
+  body {
+    font-family: Arial, sans-serif;
+  }
   .video-container {
-    position: relative;
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+    max-width: 640px;
+    margin: auto;
   }
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
+  video {
     width: 100%;
-    height: 100%;
+    border: none;
   }
-  .button-container {
+  .nav-button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
     text-align: center;
-    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .nav-button:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
 <body>
 
 <div class="video-container">
-  <!-- Assuming the video file is in the same directory as your index.html -->
-  <video autoplay muted loop>
-    <source src="Gen-2 1847456660, Create a video about, _94622b06-3b0f-43a1-, M 5.mp4" type="video/mp4">
+  <video autoplay loop muted playsinline>
+    <source src="Seattle_art_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
 
-<div class="button-container">
-  <!-- Button to go to content.html -->
-  <button onclick="window.location.href='content.html'">Explore More</button>
-</div>
+<a href="content.html" class="nav-button">View Gallery</a>
 
 </body>
 </html>
